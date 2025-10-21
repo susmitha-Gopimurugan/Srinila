@@ -1,0 +1,57 @@
+.upload-container {
+  padding: 20px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.enroll-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.enroll-card:hover {
+  transform: scale(1.02);
+}
+
+.enroll-photo {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.enroll-details p {
+  margin: 5px 0;
+}
+
+.enroll-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: royalblue;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
