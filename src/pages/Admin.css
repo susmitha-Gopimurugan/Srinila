@@ -1,0 +1,15 @@
+.admin-container { padding:60px 20px; background:#fdf2f8; min-height:100vh; display:flex; flex-direction:column; align-items:center; animation:fadeIn 1.5s ease; text-align:center;}
+.admin-header { width:100%; max-width:900px; display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;}
+.admin-title { font-size:2.4rem; color:#e8306d; font-weight:bold; position:relative;}
+.admin-title::after { content:""; display:block; width:60%; height:3px; background:#e8306d; margin:8px 0 0 0; border-radius:2px; animation:slideIn 1s ease;}
+.logout-btn, .remove-btn { padding:8px 15px; border-radius:8px; border:none; background:#e8306d; color:white; font-weight:bold; cursor:pointer; transition:0.3s;}
+.logout-btn:hover, .remove-btn:hover { background:#c91f5b; transform:scale(1.03);}
+.admin-table { width:100%; max-width:900px; border-collapse:collapse; margin-top:20px; box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+.admin-table th, .admin-table td { border:1px solid #ccc; padding:12px 15px; text-align:center;}
+.admin-table th { background:#e8306d; color:white;}
+.admin-table tr:nth-child(even) { background:#f9f9f9;}
+.admin-table tr:hover { background:#ffe6f0;}
+.home-link { margin-top:20px; font-weight:600; color:#e8306d; text-decoration:underline;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}} @keyframes slideIn{from{width:0;} to{width:60%;}}
+@media(max-width:768px){.admin-header{flex-direction:column; gap:15px;} .admin-title{font-size:2rem;} .admin-table th, .admin-table td{padding:10px 8px;}}
+@media(max-width:480px){.admin-title{font-size:1.6rem;} .logout-btn,.remove-btn{padding:6px 10px; font-size:0.85rem;} .admin-table th,.admin-table td{font-size:0.85rem; padding:8px 5px;}}

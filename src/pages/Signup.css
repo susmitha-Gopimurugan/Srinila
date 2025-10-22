@@ -1,0 +1,147 @@
+/* 🌸 Background container */
+.signup-container {
+  padding: 60px 20px;
+  background: #fdf2f8;
+  text-align: center;
+  animation: fadeIn 2s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+.signup-box{
+    width: 90%;        /* container takes 90% of the viewport */
+  max-width: 1000px; /* prevents it from getting too wide on large screens */
+  margin: auto;  
+}
+
+/* 🌸 Outer box */
+.signup-outer-box {
+  background: #fff;
+  width: 420px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  padding: 40px 35px;
+  text-align: center;
+}
+
+/* 🌸 Title */
+.signup-title {
+  font-size: 2.2rem;
+  color: #e8306d;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.signup-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #e8306d;
+  margin: 8px auto 0;
+  border-radius: 3px;
+  animation: slideIn 0.8s ease;
+}
+
+/* 🌸 Input fields */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.signup-input:focus {
+  border-color: #e8306d;
+  outline: none;
+  box-shadow: 0 0 6px rgba(232, 48, 109, 0.3);
+}
+
+/* 🌸 Button (same as login button) */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(232, 48, 109, 0.3);
+}
+
+.signup-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(232, 48, 109, 0.5);
+ background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* 🌸 Error text */
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* 🌸 Switch text */
+.switch-text {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.switch-text span {
+  color: #e8306d;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* 🌸 Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { width: 0; }
+  to { width: 60%; }
+}
+
+/* 🌸 Responsive */
+@media (max-width: 768px) {
+  .signup-outer-box {
+    width: 90%;
+    padding: 30px;
+  }
+  .signup-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-title {
+    font-size: 1.6rem;
+  }
+  .signup-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

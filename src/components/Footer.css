@@ -1,0 +1,30 @@
+.footer {
+  background: #514664;
+  color: white;
+  padding: 15px 20px; /* added horizontal padding */
+  text-align: center;
+  font-size: 1rem;    /* default font size */
+  animation: fadeIn 2s ease;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 14px 18px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px 10px;
+    font-size: 0.85rem;
+  }
+}

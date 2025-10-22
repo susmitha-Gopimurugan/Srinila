@@ -1,0 +1,186 @@
+.enroll {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fdf2f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enroll h2 {
+  color: rgb(232, 48, 109);
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+}
+
+.enroll h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: rgb(232, 48, 109);
+  margin: 8px auto 0;
+  border-radius: 2px;
+  animation: slideIn 1s ease;
+}
+
+/* Form Container */
+.enroll-form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+/* Input Fields */
+.enroll-form input,
+.enroll-form select,
+.enroll-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.enroll-form input:focus,
+.enroll-form select:focus,
+.enroll-form textarea:focus {
+  border-color: rgb(232, 48, 109);
+  outline: none;
+  box-shadow: 0 0 5px rgba(232, 48, 109, 0.4);
+}
+
+.enroll-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Gender Field */
+.gender-field {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gender-field label {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ✅ Declaration Checkbox - aligned properly */
+.declaration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.declaration label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+}
+
+.declaration input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: rgb(232, 48, 109);
+}
+
+/* ✅ Submit Button Styling */
+.enroll-form button {
+  background: rgb(232, 48, 109);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(232, 48, 109, 0.4);
+}
+
+.enroll-form button:hover {
+  background: #b91c55;
+  transform: scale(1.03);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .enroll {
+    padding: 40px 15px;
+  }
+
+  .enroll h2 {
+    font-size: 1.8rem;
+  }
+
+  .enroll-form {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .gender-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .declaration {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .declaration label {
+    font-size: 0.9rem;
+  }
+
+  .enroll-form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .enroll h2 {
+    font-size: 1.6rem;
+  }
+
+  .enroll-form {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .declaration {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .declaration label {
+    font-size: 0.85rem;
+  }
+
+  .enroll-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
